@@ -8,7 +8,7 @@
   </header>
 
   <main>
-    <TheWelcome />
+    
   </main>
 </template>
 
