@@ -24,5 +24,8 @@
 
 </template>
 <script>
-    
+    export default{
+        name:'TreeView',
+        
+    }
 </script>

@@ -1,5 +1,5 @@
 <script setup>
-  import TreeView from './components/TreeView.vue';
+  import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
 
     export default {
@@ -8,6 +8,7 @@
       TreeView,
       HeaderVue
     },
+  }
   </script>
 
 <template>
