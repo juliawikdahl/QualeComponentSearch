@@ -1,7 +1,8 @@
 <script>
     import SearchBar from './SearchBar.vue'
     export default {
-        name : [title],
+        name : 'Header',
+        props : ['title'],
         components: {
             SearchBar,
         }
@@ -11,7 +12,7 @@
 
 <template>
      <div>
-        <h1> Quale Consulting</h1>
+        <h1> {{title}}</h1>
     </div>
 </template>
 

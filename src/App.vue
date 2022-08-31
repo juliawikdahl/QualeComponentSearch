@@ -12,8 +12,8 @@
   </script>
 
 <template>
-  <headerVue></headerVue>
-  <TreeView></TreeView>
+  <headerVue title="Quale Consulting" /> 
+  <TreeView />
 </template>
 
 
