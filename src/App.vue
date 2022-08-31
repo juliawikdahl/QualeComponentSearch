@@ -1,6 +1,7 @@
 <script>
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
+  import SignInButton from './components/SignInButton.vue'
   
 
     export default {
@@ -32,7 +33,8 @@
         },
     components: {
        HeaderVue,
-       TreeView
+       TreeView,
+      
      
     }
       
@@ -44,6 +46,7 @@
    <headerVue title="Quale Consulting" /> 
     <div class="Container">
     <TreeView :node="root" />
+
    <Router-view/>
 
   </div>

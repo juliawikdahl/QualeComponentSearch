@@ -1,11 +1,13 @@
 <script>
     import SearchBar from './SearchBar.vue'
+import SignInButton from './SignInButton.vue';
     export default {
         name : 'Header',
         props : ['title'],
         components: {
-            SearchBar,
-        }
+    SearchBar,
+    SignInButton
+}
     }
 </script>
 
@@ -13,9 +15,10 @@
 <template>
      <div class="Navbar">
         <h1 class="Title"> {{title}}</h1>
-   
     <SearchBar/> 
+    <SignInButton/>
     </div>
+
 </template>
 
 
@@ -30,4 +33,7 @@
   display: flex;
   justify-content: center;
 }
+
+
+
 </style>
