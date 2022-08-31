@@ -25,6 +25,7 @@
 
 .Navbar {
   display: flex;
+  justify-content: space-around;
 }
 .logo {
   display: block;
