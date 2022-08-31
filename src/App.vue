@@ -21,8 +21,6 @@
 </template>
 
 
-
-
 <style scoped>
 
 .Navbar {
