@@ -14,12 +14,13 @@
   </script>
 
 <template>
-  <div class="Navbar">
-   <headerVue title="Quale Consulting" />  <div class="Container">
+  <div>
+   <headerVue title="Quale Consulting" /> 
+    <div class="Container">
     <TreeView />
-   </div> 
-   
+  
   </div>
+</div>
 
   
 </template>
