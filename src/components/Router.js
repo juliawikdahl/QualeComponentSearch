@@ -3,6 +3,7 @@ import SignInPage from './SignInPage.vue'
 import SearchMatchesPage from './SearchMatchesPage.vue'
 import FunctionPage from './FunctionPage.vue'
 import HomePage from './HomePage.vue'
+import AddComponentPage from './AddComponentPage.vue'
 
 
 export default createRouter({
@@ -23,6 +24,10 @@ export default createRouter({
       {
         path: '/homepage',
         component: HomePage,
+      },
+      {
+        path: '/addcomponentpage',
+        component: AddComponentPage,
       }
     ]
   })
