@@ -12,12 +12,17 @@
 
 <template>
      <div>
-        <h1> {{title}}</h1>
+        <h1 class="Title"> {{title}}</h1>
     </div>
+    <SearchBar/>
 </template>
 
 
 
 <style>
+.Title {
+    display: flex;
+
+}
 
 </style>

@@ -12,18 +12,22 @@
   </script>
 
 <template>
+  <div class="Navbar container">
+      <TreeView />
   <headerVue title="Quale Consulting" /> 
-  <TreeView />
+  </div>
+
+  
 </template>
 
 
 
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
+.Navbar {
+  display: flex;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
