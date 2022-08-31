@@ -1,5 +1,8 @@
 <template>
-    <input class="searchbar" type="text" placeholder="Search.."/>
+    <div>
+         <input class="searchbar" type="text" placeholder="Search.."/>
+    </div>
+   
  
   </template>
 
@@ -7,8 +10,7 @@
 .searchbar {
   display: flex;
   justify-content: space-;
-  color: black;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 20px;
   margin-right: 50px;
   height: 40px;
