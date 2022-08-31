@@ -12,7 +12,7 @@
   justify-content: space-;
   font-size: 15px;
   margin-top: 20px;
-  margin-right: 50px;
+  margin-left: 150px;
   height: 40px;
   width: 400px;
 }

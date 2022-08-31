@@ -13,8 +13,9 @@
 <template>
      <div class="Navbar">
         <h1 class="Title"> {{title}}</h1>
+   
+    <SearchBar/> 
     </div>
-    <SearchBar/>
 </template>
 
 
@@ -27,6 +28,6 @@
 
 .Navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 </style>

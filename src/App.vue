@@ -18,7 +18,7 @@
    <headerVue title="Quale Consulting" /> 
     <div class="Container">
     <TreeView />
-  
+    <Router-view/>
   </div>
 </div>
 
