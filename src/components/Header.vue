@@ -1,7 +1,10 @@
 <script>
     import SearchBar from './SearchBar.vue'
     export default {
-        name : [title]
+        name : [title],
+        components: {
+            SearchBar,
+        }
     }
 </script>
 
