@@ -26,17 +26,45 @@
     </ul>
   </li>
 </ul> -->
+<!--  -->
 <div>
-<h1>{{node.name}}</h1>
+<div 
+@click="expanded = !expanded"
+:style="{'margin-left': `${depth * 20}px` }"
+class="node"
+>
+  
+<p>{{node.name}}</p>
+</div>
+<TreeView 
+v-if="expanded"
+v-for="child in node.children" 
+:key="child.name" 
+:node ="child"
+:depth="depth + 1"
+/>
 </div>
 </template>
+
 <script>
     export default{
+      name: 'TreeView',
       props:{
         node: Object,
+        depth:{
+          type: Number,
+          default:0,
+        }
+      },
+      data(){
+        return{
+          expanded: false,
+        }
       }
     }
 </script>
-<style>
- 
+<style scoped>
+ .node{
+  margin-left:depth * 20px;
+ }
 </style>
