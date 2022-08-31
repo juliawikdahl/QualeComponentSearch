@@ -5,11 +5,37 @@
 
     export default {
     name: 'App',
+    data() {
+        return{
+          root:{
+            name:'Meny',
+            children: [
+              {
+            name: 'Drinks',
+            children :[
+              {
+              name: 'Coffe'
+              }]
+            },
+            {
+              name: 'Foods',
+              children : [
+                {
+                name:'Sallad'
+              }
+            ]
+           }
+          ]
+        }
+        }
+     
+        },
     components: {
        HeaderVue,
        TreeView
      
-    },
+    }
+      
   }
   </script>
 
@@ -17,7 +43,7 @@
   <div>
    <headerVue title="Quale Consulting" /> 
     <div class="Container">
-    <TreeView />
+    <TreeView :node="root" />
   
   </div>
 </div>

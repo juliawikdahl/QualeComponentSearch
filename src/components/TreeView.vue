@@ -1,5 +1,5 @@
 <template>
-  <ul id="myUL">
+  <!-- <ul id="myUL">
   <li><span class="caret">Kategories</span>
     <ul class="nested">
       <li>Water</li>
@@ -25,12 +25,16 @@
       </li> 
     </ul>
   </li>
-</ul>
-
+</ul> -->
+<div>
+<h1>{{node.name}}</h1>
+</div>
 </template>
 <script>
     export default{
-        name:'TreeView',
+      props:{
+        node: Object,
+      }
     }
 </script>
 <style>
