@@ -6,16 +6,19 @@
     export default {
     name: 'App',
     components: {
-      TreeView,
-      HeaderVue
+       HeaderVue,
+       TreeView
+     
     },
   }
   </script>
 
 <template>
-  <div class="Navbar container">
-      <TreeView />
-  <headerVue title="Quale Consulting" /> 
+  <div class="Navbar">
+   <headerVue title="Quale Consulting" />  <div class="Container">
+    <TreeView />
+   </div> 
+   
   </div>
 
   
@@ -23,11 +26,10 @@
 
 
 <style scoped>
-
-.Navbar {
-  display: flex;
-  justify-content: space-around;
+.Container{
+  justify-content: center;
 }
+
 .logo {
   display: block;
   margin: 0 auto 2rem;
