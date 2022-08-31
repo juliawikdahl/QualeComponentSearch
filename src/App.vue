@@ -1,4 +1,4 @@
-<script setup>
+<script>
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
 
