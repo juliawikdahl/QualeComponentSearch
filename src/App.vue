@@ -1,16 +1,22 @@
 <script setup>
+  import TreeView from './components/TreeView.vue';
+  import HeaderVue from './components/Header.vue'
 
-</script>
+    export default {
+    name: 'App',
+    components: {
+      TreeView,
+      HeaderVue
+    },
+  </script>
 
 <template>
-  <header>
-
-  </header>
-
-  <main>
-    
-  </main>
+  <headerVue></headerVue>
+  <TreeView></TreeView>
 </template>
+
+
+
 
 <style scoped>
 header {
