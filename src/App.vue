@@ -28,7 +28,7 @@
 <template>
   <div>
     <router-link :to="{ path: '/HomePage.vue' }">   
-      <HeaderVue logo="src\components\Pictures.svg\Quale_Logo.png" alt=""/>" 
+      <HeaderVue logo="src\components\Pictures.svg\Quale_Logo.png" alt=""/> 
     </router-link> 
     <div class="Container">
       <TreeView :node="root.root"/>
