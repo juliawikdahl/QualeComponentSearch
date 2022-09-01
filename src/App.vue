@@ -2,7 +2,12 @@
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
   import SignInButton from './components/SignInButton.vue'
+<<<<<<< HEAD
   import root from './components/Root.json'
+=======
+import QualeLogo from './components/icons/QualeLogo.vue'
+  
+>>>>>>> 47e77262cc6dd6dbd11704c013b54c450f812813
 
     export default {
     name: 'App',
@@ -12,15 +17,29 @@
       }
     },
     components: {
+<<<<<<< HEAD
        HeaderVue,
        TreeView,
     }
+=======
+    HeaderVue,
+    TreeView,
+    QualeLogo
+}
+      
+>>>>>>> 47e77262cc6dd6dbd11704c013b54c450f812813
   }
   </script>
 
 <template>
   <div>
+<<<<<<< HEAD
    <HeaderVue title="Quale Consulting" /> 
+=======
+    <router-link :to="{ path: '/HomePage.vue' }">   
+      <HeaderVue logo="src\components\Pictures.svg\Quale_Logo.png" alt=""/>" 
+    </router-link> 
+>>>>>>> 47e77262cc6dd6dbd11704c013b54c450f812813
     <div class="Container">
       <TreeView :node="root.root"/>
    <Router-view/>

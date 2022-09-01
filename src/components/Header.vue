@@ -1,12 +1,18 @@
 <script>
     import SearchBar from './SearchBar.vue'
-import SignInButton from './SignInButton.vue';
-    export default {
+    import SignInButton from './SignInButton.vue';
+    import Quale_logo from './Pictures.svg/Quale_Logo.png'
+import QualeLogo from './icons/QualeLogo.vue';
+    
+export default {
         name : 'Header',
-        props : ['title'],
+        props : {
+            logo: String
+        },
         components: {
     SearchBar,
-    SignInButton
+    SignInButton,
+  
 }
     }
 </script>
@@ -14,9 +20,10 @@ import SignInButton from './SignInButton.vue';
 
 <template>
      <div class="Navbar">
-        <h1 class="Title"> {{title}}</h1>
+        <img :src="logo"/>
     <SearchBar/> 
     <SignInButton/>
+    
     </div>
 
 </template>
@@ -32,6 +39,8 @@ import SignInButton from './SignInButton.vue';
 .Navbar {
   display: flex;
   justify-content: center;
+  background-color: rgba(15, 15, 15, 0.867);
+  padding: 30px;
 }
 
 

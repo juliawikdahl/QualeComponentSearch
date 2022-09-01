@@ -13,8 +13,6 @@
                 <div id="password-error" class="invalid-feedback"> <small>Du måste ange ett giltigt Lösenord</small></div>
             </div>
             
-            <div style="display:none" id="selector-error" class="text-danger mb-3 ms-2"> <small>Du måste vara minst 18 år gammal.</small></div>
-            
             
             <button id="btn" type="submit" class="btn-secondary mt-4 " >SKICKA</button>
     
