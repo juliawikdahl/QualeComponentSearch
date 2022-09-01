@@ -57,9 +57,13 @@ v-for="child in node.children"
         }
       },
       data(){
+        
         return{
           expanded: false,
         }
+      },
+      mounted() {
+        console.log(this.node);
       }
     }
 </script>

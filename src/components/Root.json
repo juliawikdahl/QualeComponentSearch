@@ -1,0 +1,43 @@
+{
+    "root":{
+            "name": "Meny",
+            "children": [
+              {
+            "name": "Drinks",
+            "children" :[
+              {
+              "name": "Coffe"
+              
+              },
+            {
+              "name": "Tea"
+            }]
+            },
+            {
+              "name": "Foods",
+              "children" : [
+                {
+                "name":"Sallad"
+              },
+              {
+                "name":"Sandwich"
+              },
+              {
+                "name":"Soup"
+              }
+            ]
+           },
+           {
+            "name": "Pastry",
+            "children" : [
+              {
+              "name":"Buns"
+            },
+            {
+              "name":"Other"
+            }
+          ]
+         }
+          ]
+        }
+    }

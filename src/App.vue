@@ -2,55 +2,27 @@
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
   import SignInButton from './components/SignInButton.vue'
-  
+  import root from './components/Root.json'
 
     export default {
     name: 'App',
     data() {
         return{
-          root:{
-            name:'Meny',
-            children: [
-              {
-            name: 'Drinks',
-            children :[
-              {
-              name: 'Coffe'
-              
-              },
-            {
-              name: 'Tea'
-            }]
-            },
-            {
-              name: 'Foods',
-              children : [
-                {
-                name:'Sallad'
-              }
-            ]
-           }
-          ]
-        }
-        }
-     
-        },
+          root,
+      }
+    },
     components: {
        HeaderVue,
        TreeView,
-      
-     
     }
-      
   }
   </script>
 
 <template>
   <div>
-   <headerVue title="Quale Consulting" /> 
+   <HeaderVue title="Quale Consulting" /> 
     <div class="Container">
-    <TreeView :node="root" />
-
+      <TreeView :node="root.root"/>
    <Router-view/>
 
   </div>
