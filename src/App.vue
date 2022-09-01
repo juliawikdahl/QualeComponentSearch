@@ -2,6 +2,7 @@
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
   import SignInButton from './components/SignInButton.vue'
+import QualeLogo from './components/icons/QualeLogo.vue'
   
 
     export default {
@@ -36,18 +37,19 @@
      
         },
     components: {
-       HeaderVue,
-       TreeView,
-      
-     
-    }
+    HeaderVue,
+    TreeView,
+    QualeLogo
+}
       
   }
   </script>
 
 <template>
   <div>
-   <headerVue title="Quale Consulting" /> 
+    <router-link :to="{ path: '/HomePage.vue' }">   
+      <HeaderVue logo="src\components\Pictures.svg\Quale_Logo.png" alt=""/>" 
+    </router-link> 
     <div class="Container">
     <TreeView :node="root" />
 
