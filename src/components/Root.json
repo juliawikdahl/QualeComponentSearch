@@ -1,23 +1,42 @@
 {
     "root":{
-            "name": "Meny",
+            "name": "Categories",
             "children": [
               {
             "name": "Drinks",
             "children" :[
               {
-              "name": "Coffe"
+              "name": "Coca cola"
               
               },
             {
-              "name": "Tea"
-            }]
+              "name": "Fanta"
             },
+            {
+              "name": "Sprite"
+            },
+            {
+              "name": "Ice tea"
+            }
+          
+          ]
+            },
+            {
+              "name": "Hot Drinks",
+              "children" : [
+                {
+                "name":"Coffe"
+              },
+              {
+                "name":"Tea"
+              }
+            ]
+           },
             {
               "name": "Foods",
               "children" : [
                 {
-                "name":"Sallad"
+                "name":"Pancake"
               },
               {
                 "name":"Sandwich"
@@ -26,18 +45,33 @@
                 "name":"Soup"
               }
             ]
-           },
+          },
            {
-            "name": "Pastry",
+            "name": "Sallads",
             "children" : [
               {
-              "name":"Buns"
+              "name":"Kingsallad"
             },
             {
-              "name":"Other"
+              "name":"Supersallad"
+            },
+            {
+              "name":"Specialsallad"
             }
           ]
-         }
+         },
+           
+         {
+          "name": "Pastry",
+          "children" : [
+            {
+            "name":"Buns"
+          },
+          {
+            "name":"Other"
+          }
+        ]
+       }
           ]
         }
     }

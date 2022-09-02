@@ -31,7 +31,7 @@
       <HeaderVue logo="src\components\Pictures.svg\Quale_Logo.png" alt=""/> 
     </router-link> 
     <div class="Container">
-      <TreeView :node="root.root" :shouldBeExpanded="true"/>
+      <TreeView :node="root.root" :shouldBeExpanded="true" :BoldTitle="true"/>
    <Router-view/>
 
   </div>

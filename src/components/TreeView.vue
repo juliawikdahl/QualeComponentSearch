@@ -30,18 +30,17 @@
 <div>
 <div 
 @click="expanded = !expanded"
-:style="{'margin-left': `${depth * 20}px` }"
+:style="{'margin-left': `${depth < 2 ? `0` : `15`}px` }"
 class="node"
 >
   
-<p>{{node.name}}</p>
+<p class="root" :style="{'font-size': `${BoldTitle ? '20px' : '16px'}`, 'font-weight': `${depth < 1 ? '900' : '300'}`}">{{node.name}}</p>
 </div>
 <TreeView 
 v-if="expanded"
 v-for="child in node.children" 
 :key="child.name" 
 :node ="child"
-:shouldBeExpanded="true"
 :depth="depth + 1"
 />
 </div>
@@ -53,6 +52,7 @@ v-for="child in node.children"
       props:{
         shouldBeExpanded: Boolean,
         node: Object,
+        BoldTitle: Boolean,
         depth:{
           type: Number,
           default:0,
@@ -71,5 +71,8 @@ v-for="child in node.children"
 <style scoped>
  .node{
   margin-left:depth * 20px;
+ }
+ .root{
+  margin-left: 10px;
  }
 </style>
