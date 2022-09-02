@@ -49,12 +49,14 @@
 .my-form {
     display: flex;
     justify-content: center;
+    
 }
 
 .btn-secondary {
 border-radius: 5px;
 height: 40px;
 width: 300px;
+cursor: pointer;
 
 }
 
