@@ -4,15 +4,7 @@
 
 <style>
     .btn {
-        /* width: 80px;
-        height: 30px;
-        margin-top: 25px;
-        margin-left: 150px;
-        cursor: pointer;
-        border-radius: 5px;
-        background-color: rgba(187, 181, 181, 0.753);
-        border-color: transparent;
-         */
+  
          height: 52px;
     min-width: 100px;
     border-radius: 25px;

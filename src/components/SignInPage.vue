@@ -49,7 +49,7 @@
 .my-form {
     display: flex;
     justify-content: center;
-    
+  
 }
 
 .btn-secondary {
@@ -58,6 +58,9 @@ height: 40px;
 width: 300px;
 cursor: pointer;
 
+}
+.btn-secondary:hover {
+    background-color: rgb(220, 211, 211);
 }
 
 .form {
@@ -70,7 +73,7 @@ cursor: pointer;
 }
 
 .form-control {
-    width: 200px;
+    width: 290px;
     height: 30px;
     border-radius: 5px;
     

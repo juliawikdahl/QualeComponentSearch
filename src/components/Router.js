@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory} from 'vue-router'
 import SignInPage from './SignInPage.vue'
 import SearchMatchesPage from './SearchMatchesPage.vue'
-import FunctionPage from './FunctionPage.vue'
+import ComponentPage from './ComponentPage.vue'
 import HomePage from './HomePage.vue'
 import AddComponentPage from './AddComponentPage.vue'
 
@@ -18,8 +18,8 @@ export default createRouter({
         component: SearchMatchesPage,
       },
       {
-        path: '/functionpage',
-        component: FunctionPage,
+        path: '/componentpage',
+        component: ComponentPage,
       },
       {
         path: '/homepage',
