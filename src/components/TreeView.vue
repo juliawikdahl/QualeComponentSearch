@@ -28,13 +28,15 @@
 </ul> -->
 <!--  -->
 <div>
+  <h2 class="root" v-if="depth == 0">Categories</h2>
 <div 
 @click="expanded = !expanded"
-:style="{'margin-left': `${depth < 2 ? `0` : `15`}px` }"
+:style="{'margin-left': `${depth < 2 ? `0` : `15`}px`}px` }"
 class="node"
 >
-  
-<p class="root" :style="{'font-size': `${BoldTitle ? '20px' : '16px'}`, 'font-weight': `${depth < 1 ? '900' : '300'}`}">{{node.name}}</p>
+
+
+<p v-if="depth > 0" class="tree" :style="{'font-size': `${BoldTitle ? '20px' : '16px'}`, 'font-weight': `${depth < 2 ? '900' : '300'}`}">{{node.name}}</p>
 </div>
 <TreeView 
 v-if="expanded"
@@ -73,6 +75,10 @@ v-for="child in node.children"
   margin-left:depth * 20px;
  }
  .root{
+ 
+  margin-left: 10px;
+ }
+ .tree{
   margin-left: 10px;
  }
 </style>
