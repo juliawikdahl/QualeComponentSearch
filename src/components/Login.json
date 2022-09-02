@@ -1,0 +1,12 @@
+{
+    "AcceptedLogins": [
+        {
+            "userName": "abc@hotmail.com",
+            "password": "password"
+        },
+        {
+            "userName": "Admin@hotmail.com",
+            "password": "admin1"
+        }
+    ]
+}

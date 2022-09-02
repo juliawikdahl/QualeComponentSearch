@@ -1,3 +1,27 @@
+<script>
+      import LoginInfo from './Login.json'
+     export default {
+    name: 'SignInPage',
+    data() {
+        return{
+            LoginInfo,
+      }
+    },
+    methods: {
+        HandleSignIn: function() {
+            const userName = document.getElementById("Email").value;
+            const password = document.getElementById("password").value;
+            this.LoginInfo.AcceptedLogins.forEach( (item) => {
+                if(item.userName == userName && item.password == password) {
+                    console.log("Du lyckades logga in!");
+                    return;
+                }
+            });
+            console.log("Lösenordet matchade inte");
+        }
+    }
+    }
+</script>
 
 <template>
 <div class="my-form ">
@@ -14,7 +38,7 @@
             </div>
             
             
-            <button id="btn" type="submit" class="btn-secondary mt-4 " >SKICKA</button>
+            <button id="btn" type="submit" @click="HandleSignIn()" class="btn-secondary mt-4 " >SKICKA</button>
     
     </div>
 </div>
@@ -22,7 +46,6 @@
 </template>
 
 <style scoped>
-
 .my-form {
     display: flex;
     justify-content: center;

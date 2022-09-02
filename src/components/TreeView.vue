@@ -41,6 +41,7 @@ v-if="expanded"
 v-for="child in node.children" 
 :key="child.name" 
 :node ="child"
+:shouldBeExpanded="true"
 :depth="depth + 1"
 />
 </div>
@@ -50,6 +51,7 @@ v-for="child in node.children"
     export default{
       name: 'TreeView',
       props:{
+        shouldBeExpanded: Boolean,
         node: Object,
         depth:{
           type: Number,
@@ -57,9 +59,8 @@ v-for="child in node.children"
         }
       },
       data(){
-        
         return{
-          expanded: false,
+          expanded: this.shouldBeExpanded,
         }
       },
       mounted() {
