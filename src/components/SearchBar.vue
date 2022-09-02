@@ -14,13 +14,16 @@
   margin-left: 150px;
   height: 40px;
   width: 400px;
-  background-color: rgba(187, 181, 181, 0.753);
+  background-color: rgba(246, 81, 81, 0.868);
   border: transparent;
   border-radius: 5px;
   
+  
 }
 
-
-
+::placeholder {
+  color: white;
+  text-decoration: none;
+}
 
   </style>

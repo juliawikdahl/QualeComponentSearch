@@ -2,7 +2,6 @@
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
   import SignInButton from './components/SignInButton.vue'
-
   import root from './components/Root.json'
 
   
@@ -41,7 +40,9 @@
 </template>
 
 
-<style scoped>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .Container{
   justify-content: center;
 }
@@ -67,5 +68,10 @@
     place-items: flex-start;
     flex-wrap: wrap;
   }
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
 }
 </style>
