@@ -43,11 +43,18 @@
     justify-content: center;
 }
 
+
+
 .btn-secondary {
+   
+cursor: pointer;
 border-radius: 5px;
 height: 40px;
 width: 300px;
 
+}
+.btn-secondary:hover {
+    background-color: rgb(220, 211, 211);
 }
 
 .add-component {
