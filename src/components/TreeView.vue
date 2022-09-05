@@ -1,4 +1,5 @@
 <template>
+  <div>hej</div>
   <div id="Tree">
 <div >
   <h2 class="root" v-if="depth == 0">Categories</h2>
