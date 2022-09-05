@@ -25,7 +25,6 @@
 
 <template>
  
- 
     <router-link :to="{ path: '/HomePage.vue' }">   
       <HeaderVue logo="src\components\Pictures.svg\Quale_Logo.png" alt=""/> 
     </router-link> 
@@ -33,7 +32,10 @@
    
    <div class="hejsan">
     <TreeView :node="root.root" :shouldBeExpanded="true" :BoldTitle="true"/>
-<Router-view/>
+    <div class="page">
+      <Router-view/>
+    </div>
+
     
   </div>
 </template>
@@ -76,5 +78,9 @@
 
 .hejsan {
   display: flex;
+}
+
+.page {
+  margin-top: 60px;
 }
 </style>

@@ -15,30 +15,47 @@ export default {
 
   data() {
     return {
-      showModal:true
+      showModal:false
     }
   }
 }
 
+// $('document').ready(function(){
+//   $('.button2').on('click', function(){
+//      $('.modal').addClass('modal-is-active');
+//      $('.container').addClass('container-is-blurred');
+//   });
+  
+//     $('.modal').on('click', function(){
+//         if($('.modal').hasClass('modal-is-active'))
+//         {
+//          $('.modal').removeClass('modal-is-active');
+//          $('.container').removeClass('container-is-blurred');
+//         }
+//     });    
+//   });
+
 </script>
 
 
-<template>
-    <div class="code container">
+<template> 
+<div class="modal-overlay" v-if="showModal" @click="showModal =false"></div>
+    <div class="code"> 
        <div>
         <div>
           
           <button class="button">länk</button>
           
-             <button @click="showModal =true" class="button2">Redigera</button>
+             <button @click="showModal =true" class="button2">Edit</button>
           
           <transition-group name="fade" appear>
-            <div class="modal-overlay" v-if="showModal" @click="showModal =false"></div>
+           
           </transition-group>
 
           <transition-group name="slide" appear>
             <div class="modal" v-if="showModal"> 
-              <input class="form3" type="text" placeholder=""/>
+             
+              <input class="form3" type="title" placeholder="Title"/> 
               <input class="form2" type="text" placeholder="Search.."/>
               <input class="form2" type="text" placeholder="Search.."/>
               <input class="form2" type="text" placeholder="Search.."/>
@@ -49,10 +66,7 @@ export default {
 
           </transition-group>
 
-         
-
-
-         </div>
+       </div>
          
          <div>
             <h1 class="title">Category</h1>
@@ -74,7 +88,6 @@ export default {
 
 <style>
    .code {
-    
     display: flex;
     justify-content: center;
     
@@ -141,31 +154,33 @@ export default {
 
    .modal {
     position: fixed;
-    margin-top: 250px;
+    margin-top: 440px;
     left: 80%;
+    margin-left: -150px;
     transform: translate(-100%, -100%);
     z-index: 99;
     max-width: 1000px;
-    height: 500px;
+    height: 450px;
+    display: table;
 
-    background-color: rgb(227, 235, 232);
+    background-color: rgb(224, 228, 226);
 
 
    }
    .form3 {
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: 8px;
     width: 300px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
     height: 30px;
    }
    .form2 {
 
     margin-bottom: 8px;
     width: 300px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
     height: 30px;
 
    }
