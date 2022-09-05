@@ -1,7 +1,7 @@
 <script>
   import TreeView from './components/TreeView.vue'
   import HeaderVue from './components/Header.vue'
-  import root from './components/Root.json'
+  import root from './components/JsonFiles/Root.json'
 
   
 

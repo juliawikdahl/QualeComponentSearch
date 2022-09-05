@@ -45,16 +45,16 @@ v-for="child in node.children"
 </script>
 <style scoped>
   #Tree{
-    color: wheat;
-   background-color: rgba(15, 15, 15, 0.867);
-   margin-right: 200px;
-   margin-top: -20px;
+    color: white;
+   background-color: rgb(48, 47, 47);
+   margin-right: 100px;
+   
    margin-bottom: 40px;
    white-space: nowrap;
 
   }
  .node{
- 
+  background-color: transparent;
   margin-left:depth * 20px;
  }
  .root{
@@ -64,5 +64,8 @@ v-for="child in node.children"
  .tree{
 
   margin-left: 50px;
+ }
+ .tree p{
+ 
  }
 </style>

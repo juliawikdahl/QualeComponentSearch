@@ -1,5 +1,5 @@
 <script>
-      import LoginInfo from './Login.json'
+      import LoginInfo from './JsonFiles/SignIn.json'
      export default {
     name: 'SignInPage',
     data() {

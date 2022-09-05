@@ -3,7 +3,7 @@
     import SignInButton from './SignInButton.vue';
     import Quale_logo from './Pictures.svg/Quale_Logo.png';
 import QualeLogo from './icons/QualeLogo.vue';
-    import Comp from './Component.json';
+    import Comp from './JsonFiles/Component.json';
     
 export default {
         name : 'Header',
