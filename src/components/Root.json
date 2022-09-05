@@ -71,7 +71,211 @@
             "name":"Other"
           }
         ]
-       }
+       },
+       {
+        "name": "Hot Drinks",
+        "children" : [
+          {
+          "name":"Coffe"
+        },
+        {
+          "name":"Tea"
+        }
+      ]
+     },
+      {
+        "name": "Foods",
+        "children" : [
+          {
+          "name":"Pancake"
+        },
+        {
+          "name":"Sandwich"
+        },
+        {
+          "name":"Soup"
+        }
+      ]
+    },
+     {
+      "name": "Sallads",
+      "children" : [
+        {
+        "name":"Kingsallad"
+      },
+      {
+        "name":"Supersallad"
+      },
+      {
+        "name":"Specialsallad"
+      }
+    ]
+   },
+     
+   {
+    "name": "Pastry",
+    "children" : [
+      {
+      "name":"Buns"
+    },
+    {
+      "name":"Other"
+    }
+  ]
+ },
+ {
+  "name": "Hot Drinks",
+  "children" : [
+    {
+    "name":"Coffe"
+  },
+  {
+    "name":"Tea"
+  }
+]
+},
+{
+  "name": "Foods",
+  "children" : [
+    {
+    "name":"Pancake"
+  },
+  {
+    "name":"Sandwich"
+  },
+  {
+    "name":"Soup"
+  }
+]
+},
+{
+"name": "Sallads",
+"children" : [
+  {
+  "name":"Kingsallad"
+},
+{
+  "name":"Supersallad"
+},
+{
+  "name":"Specialsallad"
+}
+]
+},
+
+{
+"name": "Pastry",
+"children" : [
+{
+"name":"Buns"
+},
+{
+"name":"Other"
+}
+]
+},
+{
+  "name": "Hot Drinks",
+  "children" : [
+    {
+    "name":"Coffe"
+  },
+  {
+    "name":"Tea"
+  }
+]
+},
+{
+  "name": "Foods",
+  "children" : [
+    {
+    "name":"Pancake"
+  },
+  {
+    "name":"Sandwich"
+  },
+  {
+    "name":"Soup"
+  }
+]
+},
+{
+"name": "Sallads",
+"children" : [
+  {
+  "name":"Kingsallad"
+},
+{
+  "name":"Supersallad"
+},
+{
+  "name":"Specialsallad"
+}
+]
+},
+
+{
+"name": "Pastry",
+"children" : [
+{
+"name":"Buns"
+},
+{
+"name":"Other"
+}
+]
+},
+{
+  "name": "Hot Drinks",
+  "children" : [
+    {
+    "name":"Coffe"
+  },
+  {
+    "name":"Tea"
+  }
+]
+},
+{
+  "name": "Foods",
+  "children" : [
+    {
+    "name":"Pancake"
+  },
+  {
+    "name":"Sandwich"
+  },
+  {
+    "name":"Soup"
+  }
+]
+},
+{
+"name": "Sallads",
+"children" : [
+  {
+  "name":"Kingsallad"
+},
+{
+  "name":"Supersallad"
+},
+{
+  "name":"Specialsallad"
+}
+]
+},
+
+{
+"name": "Pastry",
+"children" : [
+{
+"name":"Buns"
+},
+{
+"name":"Other"
+}
+]
+}
           ]
         }
     }

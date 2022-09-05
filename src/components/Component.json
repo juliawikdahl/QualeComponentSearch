@@ -1,0 +1,51 @@
+{
+    "Components": [{
+        "Category": "Hot Drinks",
+        "UnderCategories": [{
+            "Kaffe": [
+                {
+                    "Title": "Svart Kaffe",
+                    "Description": "Vanligt kaffe"
+                },
+                {
+                    "Title": "Cappucino",
+                    "Description": "Kaffe med en skvätt mjölk i"
+                }
+            ],
+            "Te": [
+                {
+                    "Title": "Grönt te",
+                    "Description": "Te gjort på gröna blad"
+                },
+                {
+                    "Title": "Svart te",
+                    "Description": "Te gjort på svarta blad"
+                }
+            ]
+        }]
+    }, {
+        "Category": "Cold Drinks",
+        "UnderCategories": [{
+            "Läsk": [
+                {
+                    "Title": "Coca cola",
+                    "Description": "Coca cola med socker i"
+                },
+                {
+                    "Title": "Fanta",
+                    "Description": "Apelsindryck"
+                }
+            ],
+            "Iste": [
+                {
+                    "Title": "Iste Persika",
+                    "Description": "Iste gjort på persika"
+                },
+                {
+                    "Title": "Iste äpple apelsin",
+                    "Description": "Iste gjort på äpple och apelsin"
+                }
+            ]
+        }]
+    }]
+}

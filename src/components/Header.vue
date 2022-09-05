@@ -1,8 +1,9 @@
 <script>
-    import SearchBar from './SearchBar.vue'
+    import SearchBar from './SearchBar.vue';
     import SignInButton from './SignInButton.vue';
-    import Quale_logo from './Pictures.svg/Quale_Logo.png'
+    import Quale_logo from './Pictures.svg/Quale_Logo.png';
 import QualeLogo from './icons/QualeLogo.vue';
+    import Comp from './Component.json';
     
 export default {
         name : 'Header',
@@ -21,7 +22,7 @@ export default {
 <template>
      <div class="Navbar">
         <img :src="logo"/>
-    <SearchBar/> 
+    <SearchBar :list="Comp"/> 
     <SignInButton/>
     
     </div>

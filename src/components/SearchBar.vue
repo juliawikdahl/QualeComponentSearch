@@ -1,10 +1,34 @@
 <template>
-    <div >
+<!-- v-for="categories in list.Category" 
+    :key="categories.undercategies" -->
+    <div 
+    >
          <input class="searchbar" type="text" placeholder="Search.."/>
+        
+         
     </div>
    
  
   </template>
+ <script>
+
+  export default{
+        name: 'SearchBar',
+        props:{
+          list: Object,
+        },
+        methods: {
+        FindSearchWord: function() {
+          
+          return list 
+            }
+            // console.log("det funka");
+        }
+    }
+          
+      
+  
+  </script>
 
   <style>
 .searchbar {
@@ -19,8 +43,6 @@
   border-radius: 25px;
   padding-left: 20px;
 
-  
-  
   
 }
 a {

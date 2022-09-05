@@ -1,5 +1,6 @@
 <template>
-<div>
+  <div id="Tree">
+<div >
   <h2 class="root" v-if="depth == 0">Categories</h2>
 </div>
 <div
@@ -16,6 +17,7 @@ v-for="child in node.children"
 :node ="child"
 :depth="depth + 1"
 />
+</div>
 </template>
 
 <script>
@@ -41,14 +43,24 @@ v-for="child in node.children"
     }
 </script>
 <style scoped>
+  #Tree{
+    color: wheat;
+   background-color: rgba(15, 15, 15, 0.867);
+   margin-right: 1550px;
+   margin-top: -20px;
+   margin-bottom: 40px;
+   white-space: nowrap;
+  }
  .node{
+ 
   margin-left:depth * 20px;
  }
  .root{
- 
-  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-left: 50px;
  }
  .tree{
-  margin-left: 10px;
+
+  margin-left: 50px;
  }
 </style>
