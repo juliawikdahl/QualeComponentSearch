@@ -74,6 +74,8 @@ export default {
 
 <style>
    .code {
+    
+    
     display: flex;
     justify-content: center;
     

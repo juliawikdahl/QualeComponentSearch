@@ -50,6 +50,7 @@ v-for="child in node.children"
    margin-top: -20px;
    margin-bottom: 40px;
    white-space: nowrap;
+
   }
  .node{
  

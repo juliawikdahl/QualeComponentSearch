@@ -49,6 +49,7 @@
 .my-form {
     display: flex;
     justify-content: center;
+    
   
 }
 
