@@ -8,4 +8,4 @@ import Modal from "vue-bs-modal";
 createApp(App)
 .use(router)
 .mount('#app')
-App.use(Modal).mount("#app");
+// App.use(Modal).mount("#app");

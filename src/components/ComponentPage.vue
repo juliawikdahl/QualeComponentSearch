@@ -147,7 +147,6 @@ export default {
     z-index: 99;
     max-width: 1000px;
     height: 500px;
-    display: table;
 
     background-color: rgb(227, 235, 232);
 
